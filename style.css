@@ -297,9 +297,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .tree-container {
+  /* .tree-container {
     transform: scale(0.7);
-  }
+  } */
   
   .tree {
     transform: scale(0.7);
