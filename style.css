@@ -224,6 +224,7 @@ body {
   color: white;
   background-color: red;
   border-radius: 20px;
+  border: solid 5px #CDA434;
   opacity: 0;
   transform: scale(0);
   transition: all .5s ease;
@@ -238,7 +239,7 @@ body {
 
 .card h1 {
   font-family: 'Mountains of Christmas', serif;
-  font-size: 64px;
+  font-size: 44px;
   padding-bottom: 5px;
   font-weight: bold;
   align-content: center;
@@ -246,7 +247,7 @@ body {
 
 .card p {
   font-family: 'Mountains of Christmas', serif;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -255,7 +256,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   z-index: 3;
 }
