@@ -239,7 +239,7 @@ body {
 
 .card h1 {
   font-family: 'Mountains of Christmas', serif;
-  font-size: 44px;
+  font-size: 50px;
   padding-bottom: 5px;
   font-weight: bold;
   align-content: center;
@@ -247,16 +247,16 @@ body {
 
 .card p {
   font-family: 'Mountains of Christmas', serif;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .tree-container .snow-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   z-index: 3;
 }
@@ -264,6 +264,7 @@ body {
 .tree-container .snow {
   position: relative;
   display: flex;
+  height: 100vh;
 }
 
 .tree-container .snow span {
