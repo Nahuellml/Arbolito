@@ -30,7 +30,7 @@ body {
   filter: invert(52%) sepia(55%) saturate(549%) hue-rotate(71deg) brightness(84%) contrast(97%);
 }
 
-@keyframes colores {
+/* @keyframes colores {
   0% {
     filter: invert(52%) sepia(100%) saturate(200%) hue-rotate(0deg) brightness(100%) contrast(100%) drop-shadow(0 0 2px rgb(223, 172, 5)) 
     drop-shadow(0 0 5px rgb(223, 172, 5));
@@ -51,7 +51,7 @@ body {
     filter: invert(52%) sepia(100%) saturate(200%) hue-rotate(480deg) brightness(100%) contrast(100%) drop-shadow(0 0 2px rgb(151, 238, 70)) 
     drop-shadow(0 0 5px rgb(151, 238, 70));
   }
-}
+} */
 
 
 
@@ -76,8 +76,8 @@ body {
 
 .ball {
   position: absolute;
-  width: 30px;
-  height: 36px; 
+  width: 20px;
+  height: 23px; 
   background-image: url('imagenes/campana.svg');
   background-size: cover; 
   display: inline-block;
@@ -141,72 +141,76 @@ body {
 
 
 #ball1 {
-  left: 5%;
-  bottom: 7%;
+  left: 20%;
+  bottom: 20%;
 }
 #ball2 {
-  left: 25%;
-  bottom: 5%;
+  left: 30%;
+  bottom: 20%;
 }
 #ball3 {
   left: 62%;
-  bottom: 6%;
+  bottom: 20%;
 }
 #ball4 {
   left: 80%;
-  bottom: 6%;
+  bottom: 20%;
 }
 #ball5 {
-  left: 17%;
-  bottom: 18%;
+  left: 25%;
+  bottom: 28%;
 }
 #ball6 {
   left: 38%;
-  bottom: 20%;
+  bottom: 28%;
 }
 #ball7 {
   left: 54%;
-  bottom: 18%;
+  bottom: 28%;
 }
 #ball8 {
   left: 70%;
-  bottom: 20%;
+  bottom: 28%;
 }
 #ball9 {
-  left: 25%;
-  bottom: 32%;
+  left: 32%;
+  bottom: 38%;
 }
 #ball10 {
   left: 45%;
-  bottom: 35%;
+  bottom: 38%;
 }
 #ball11 {
   left: 65%;
-  bottom: 34%;
+  bottom: 38%;
 }
 #ball12 {
   left: 33%;
-  bottom: 44%;
+  bottom: 48%;
 }
 #ball13 {
-  left: 60%;
-  bottom: 45%;
+  left: 48%;
+  bottom: 48%;
 }
 #ball14 {
-  left: 35%;
-  bottom: 58%;
+  left: 60%;
+  bottom: 48%;
 }
 #ball15 {
-  left: 50%;
+  left: 40%;
   bottom: 58%;
 }
 #ball16 {
-  left: 50%;
-  bottom: 70%;
+  left: 55%;
+  bottom: 58%;
 }
 #ball17 {
   left: 50%;
-  bottom: 82%;
+  bottom: 65%;
+}
+#ball18 {
+  left: 50%;
+  bottom: 75%;
 }
 
 .card {
@@ -238,4 +242,20 @@ body {
   font-family: 'Mountains of Christmas', serif;
   font-size: 34px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .tree-container {
+    transform: scale(0.7);
+  }
+  
+  .tree {
+    transform: scale(0.7);
+  }
+
+  .guirnaldas {
+    transform: scale(0.7);
+    top: 88px;
+    left: 87px;
+  }
 }
