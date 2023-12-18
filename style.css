@@ -86,6 +86,7 @@ body {
   display: inline-block;
   animation: tintilar 20s linear infinite;
   cursor: pointer;
+  z-index: 4;
 }
 
 .ball:hover {
@@ -231,6 +232,7 @@ body {
   align-items: center;
   padding: 35px;
   cursor: pointer;
+  z-index: 5;
 }
 
 .card h1 {
@@ -245,6 +247,50 @@ body {
   font-family: 'Mountains of Christmas', serif;
   font-size: 34px;
   font-weight: bold;
+}
+
+.tree-container .snow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.tree-container .snow {
+  position: relative;
+  display: flex;
+}
+
+.tree-container .snow span {
+  position: relative;
+  min-width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 1vw;
+  box-shadow: -100px 20px 5px #fff,
+              100px 20px 10px #fff;
+  animation: animateSnow 15s linear infinite;   
+  animation-duration: calc(75s / var(--i));         
+  animation-delay: calc(-75s / var(--i));
+  transition: transform 1s ease-in-out;         
+}
+
+.tree-container .snow span:nth-child(even) {
+  min-width: 10px;
+  height: 10px;
+}
+
+@keyframes animateSnow {
+  0% {
+    transform: translateY(-10vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
 }
 
 @media only screen and (max-width: 600px) {
