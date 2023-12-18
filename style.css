@@ -28,6 +28,7 @@ body {
   background-image: url('imagenes/arbol.svg');
   background-repeat: no-repeat;
   filter: invert(52%) sepia(55%) saturate(549%) hue-rotate(71deg) brightness(84%) contrast(97%);
+  transform: scale(.7);
 }
 
 /* @keyframes colores {
@@ -59,16 +60,17 @@ body {
   width: 132.5px;
   height: 198.981px;
   position: absolute;
-  top: 28px;
-  left: 41px;
+  top: 87px;
+  left: 87px;
   animation: colores 10s ease-in infinite;
+  transform: scale(.7);
 }
 
 .star {
   position: absolute;
   width: 72px;
   height: 70px;
-  top: -88px;
+  top: 25px;
   left: 222px;
   transform: scale(1.2);
   background-image: url('imagenes/star.svg');
@@ -76,8 +78,8 @@ body {
 
 .ball {
   position: absolute;
-  width: 20px;
-  height: 23px; 
+  width: 30px;
+  height: 36px; 
   background-image: url('imagenes/campana.svg');
   background-size: cover; 
   display: inline-block;
