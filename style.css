@@ -221,6 +221,7 @@ body {
   position: absolute;
   width: 55%;
   height: 70%;
+  color: white;
   background-color: red;
   border-radius: 20px;
   opacity: 0;
@@ -273,9 +274,9 @@ body {
   margin: 0 1vw;
   box-shadow: -100px 20px 5px #fff,
               100px 20px 10px #fff;
-  animation: animateSnow 15s linear infinite;   
-  animation-duration: calc(75s / var(--i));         
-  animation-delay: calc(-75s / var(--i));
+  animation: animateSnow linear infinite;   
+  animation-duration: calc(90s / var(--i));         
+  animation-delay: calc(-2s / var(--i));
   transition: transform 1s ease-in-out;         
 }
 
