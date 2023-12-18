@@ -10,6 +10,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #222;
+  overflow: hidden;
 }
 
 .tree-container {
@@ -143,82 +144,82 @@ body {
 
 
 #ball1 {
-  left: 20%;
-  bottom: 20%;
+  left: 18%;
+  bottom: 17%;
 }
 #ball2 {
-  left: 30%;
-  bottom: 20%;
+  left: 32%;
+  bottom: 18%;
 }
 #ball3 {
-  left: 62%;
-  bottom: 20%;
+  left: 58%;
+  bottom: 18%;
 }
 #ball4 {
-  left: 80%;
-  bottom: 20%;
+  left: 72%;
+  bottom: 17%;
 }
 #ball5 {
   left: 25%;
-  bottom: 28%;
+  bottom: 26%;
 }
 #ball6 {
-  left: 38%;
+  left: 40%;
   bottom: 28%;
 }
 #ball7 {
-  left: 54%;
-  bottom: 28%;
+  left: 52%;
+  bottom: 26%;
 }
 #ball8 {
-  left: 70%;
+  left: 66%;
   bottom: 28%;
 }
 #ball9 {
-  left: 32%;
-  bottom: 38%;
+  left: 31%;
+  bottom: 36%;
 }
 #ball10 {
-  left: 45%;
-  bottom: 38%;
+  left: 50%;
+  bottom: 37%;
 }
 #ball11 {
-  left: 65%;
-  bottom: 38%;
+  left: 64%;
+  bottom: 39%;
 }
 #ball12 {
-  left: 33%;
-  bottom: 48%;
+  left: 37%;
+  bottom: 46%;
 }
 #ball13 {
-  left: 48%;
-  bottom: 48%;
+  left: 50%;
+  bottom: 46%;
 }
 #ball14 {
-  left: 60%;
-  bottom: 48%;
+  left: 58%;
+  bottom: 47%;
 }
 #ball15 {
   left: 40%;
-  bottom: 58%;
+  bottom: 54%;
 }
 #ball16 {
-  left: 55%;
-  bottom: 58%;
+  left: 53%;
+  bottom: 56%;
 }
 #ball17 {
   left: 50%;
   bottom: 65%;
 }
 #ball18 {
-  left: 50%;
-  bottom: 75%;
+  left: 49%;
+  bottom: 73%;
 }
 
 .card {
   position: absolute;
-  width: 330px;
-  height: 480px;
+  width: 55%;
+  height: 70%;
   background-color: red;
   border-radius: 20px;
   opacity: 0;
