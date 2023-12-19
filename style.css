@@ -30,33 +30,7 @@ body {
   background-repeat: no-repeat;
   filter: invert(52%) sepia(55%) saturate(549%) hue-rotate(71deg) brightness(84%) contrast(97%);
   transform: scale(.7);
-  animation: colores 60s ease-in infinite;
 }
-
-@keyframes colores {
-  0% {
-    filter: invert(52%) sepia(100%) saturate(200%) hue-rotate(0deg) brightness(100%) contrast(100%) drop-shadow(0 0 2px rgb(223, 172, 5)) 
-    drop-shadow(0 0 5px rgb(223, 172, 5));
-  }
-  25% {
-    filter: invert(52%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(100%) contrast(100%) drop-shadow(0 0 2px rgba(30, 230, 236)) 
-    drop-shadow(0 0 5px rgba(30, 230, 236));
-  }
-  50% {
-    filter: invert(52%) sepia(100%) saturate(200%) hue-rotate(240deg) brightness(100%) contrast(100%) drop-shadow(0 0 2px rgb(231, 130, 169)) 
-    drop-shadow(0 0 5px rgb(231, 130, 169));
-  }
-  75% {
-    filter: invert(52%) sepia(100%) saturate(200%) hue-rotate(360deg) brightness(100%) contrast(100%) drop-shadow(0 0 2px rgb(230, 101, 191)) 
-    drop-shadow(0 0 5px rgb(230, 101, 191));
-  }
-  100% {
-    filter: invert(52%) sepia(100%) saturate(200%) hue-rotate(480deg) brightness(100%) contrast(100%) drop-shadow(0 0 2px rgb(151, 238, 70)) 
-    drop-shadow(0 0 5px rgb(151, 238, 70));
-  }
-}
-
-
 
 .guirnaldas {
   width: 132.5px;
