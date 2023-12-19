@@ -30,9 +30,10 @@ body {
   background-repeat: no-repeat;
   filter: invert(52%) sepia(55%) saturate(549%) hue-rotate(71deg) brightness(84%) contrast(97%);
   transform: scale(.7);
+  animation: colores 60s ease-in infinite;
 }
 
-/* @keyframes colores {
+@keyframes colores {
   0% {
     filter: invert(52%) sepia(100%) saturate(200%) hue-rotate(0deg) brightness(100%) contrast(100%) drop-shadow(0 0 2px rgb(223, 172, 5)) 
     drop-shadow(0 0 5px rgb(223, 172, 5));
@@ -53,7 +54,7 @@ body {
     filter: invert(52%) sepia(100%) saturate(200%) hue-rotate(480deg) brightness(100%) contrast(100%) drop-shadow(0 0 2px rgb(151, 238, 70)) 
     drop-shadow(0 0 5px rgb(151, 238, 70));
   }
-} */
+}
 
 
 
@@ -64,7 +65,6 @@ body {
   top: 87px;
   left: 87px;
   filter: drop-shadow(5px 5px 5px black);
-  animation: colores 10s ease-in infinite;
   transform: scale(.7);
 }
 
@@ -263,40 +263,31 @@ body {
   z-index: 3;
 }
 
-.tree-container .snow {
-  position: relative;
-  display: flex;
-  height: 100vh;
+.snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url('imagenes/nieve.png');
+  background-size: cover;
+  animation: animationSnow 4s ease-in-out infinite;
 }
 
-.tree-container .snow span {
-  position: relative;
-  min-width: 5px;
-  height: 5px;
-  background: #fff;
-  border-radius: 50%;
-  margin: 0 1vw;
-  box-shadow: -100px 20px 5px #fff,
-              100px 20px 10px #fff;
-  animation: animateSnow linear infinite;   
-  animation-duration: calc(90s / var(--i));         
-  animation-delay: calc(-2s / var(--i));
-  transition: transform 1s ease-in-out;         
-}
-
-.tree-container .snow span:nth-child(even) {
-  min-width: 10px;
-  height: 10px;
-}
-
-@keyframes animateSnow {
+@keyframes animationSnow {
   0% {
-    transform: translateY(-10vh);
+    transform: translate(0,0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
   100% {
-    transform: translateY(100vh);
+    opacity: 0;
+    transform: translate(100px,50vh);
   }
 }
+
 
 @media only screen and (max-width: 600px) {
   /* .tree-container {
