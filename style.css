@@ -194,8 +194,8 @@ body {
 
 .card {
   position: absolute;
-  width: 57%;
-  height: 70%;
+  width: 52%;
+  height: 62%;
   color: white;
   background-color: red;
   background-image: url(imagenes/fondo-tarjeta.jpg);
@@ -221,12 +221,14 @@ body {
   padding-bottom: 5px;
   font-weight: bold;
   align-content: center;
+  text-shadow: 0 0 5px black;
 }
 
 .card p {
   font-family: 'Mountains of Christmas', serif;
   font-size: 25px;
   font-weight: bold;
+  text-shadow: 0 0 5px black;
 }
 
 .tree-container .snow-container {
@@ -271,12 +273,6 @@ body {
   } */
   
   .tree {
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
-
-  /* .guirnaldas {
-    transform: scale(0.7);
-    top: 88px;
-    left: 87px;
-  } */
 }
