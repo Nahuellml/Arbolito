@@ -63,6 +63,7 @@ body {
   position: absolute;
   top: 87px;
   left: 87px;
+  filter: drop-shadow(5px 5px 5px black);
   animation: colores 10s ease-in infinite;
   transform: scale(.7);
 }
@@ -84,6 +85,7 @@ body {
   background-image: url('imagenes/campana.svg');
   background-size: cover; 
   display: inline-block;
+  filter: drop-shadow(1px 1px 1px red);
   animation: tintilar 20s linear infinite;
   cursor: pointer;
   z-index: 4;
