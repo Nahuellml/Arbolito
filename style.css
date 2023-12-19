@@ -31,16 +31,6 @@ body {
   transform: scale(0.5);
 }
 
-/* .guirnaldas {
-  width: 132.5px;
-  height: 198.981px;
-  position: absolute;
-  top: 87px;
-  left: 87px;
-  filter: drop-shadow(5px 5px 5px black);
-  transform: scale(.7);
-} */
-
 .star {
   position: absolute;
   width: 72px;
@@ -62,10 +52,6 @@ body {
   animation: tintilar 20s linear infinite;
   cursor: pointer;
   z-index: 4;
-}
-
-.ball:hover {
-  filter: invert(53%) sepia(57%) saturate(3223%) hue-rotate(90deg) brightness(103%) contrast(108%);
 }
 
 @keyframes tintilar {
@@ -194,7 +180,7 @@ body {
 
 .card {
   position: absolute;
-  width: 52%;
+  width: 50%;
   height: 62%;
   color: white;
   background-color: red;
@@ -269,7 +255,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .tree-container {
-    transform: scale(0.7);
+    transform: scale(1);
   }
   
   .tree {
