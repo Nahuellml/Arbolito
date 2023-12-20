@@ -203,7 +203,7 @@ body {
 
 .card {
   position: absolute;
-  width: 45%;
+  width: 55%;
   height: 62%;
   color: white;
   background-color: red;
@@ -275,6 +275,11 @@ body {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 75%;
+  }
+}
 
 @media only screen and (max-width: 400px) {
   
@@ -286,4 +291,5 @@ body {
     width: 25px;
     height: 25px;
   }
+
 }
