@@ -275,9 +275,9 @@ body {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
   .card {
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -290,6 +290,9 @@ body {
   .tree-container .ball {
     width: 25px;
     height: 25px;
+  }
+  .card {
+    width: 90%;
   }
 
 }
