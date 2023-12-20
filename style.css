@@ -8,6 +8,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(imagenes/klipartz.com.png), url(imagenes/klipartz.com\ \(1\).png);
+  background-size: cover, cover;
+  background-position: center, center;
   height: 100vh;
   width: 100%;
   background-color: #222;
@@ -15,42 +18,56 @@ body {
 }
 
 .tree-container {
-  max-width: 800px;
-  max-height: 650px;
+  width: 600px;
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 } 
 
-.tree {
-  width: 615px;
-  height: 982px;
-  position: relative;
-  background-image: url('imagenes/arbol.png');
+/* .tree-base {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  bottom: -8%;
+  z-index: 1;
+  background-image: url(imagenes/pngwing.com.png);
   background-size: cover;
-  transform: scale(0.5);
+} */
+
+.tree-container .tree {
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  bottom: 4rem;
+  background-image: url('imagenes/arbol.png');
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .star {
   position: absolute;
   width: 72px;
   height: 70px;
-  top: 7%;
-  left: 44%;
+  top: -1%;
+  left: 41%;
   background-image: url(imagenes/estrella-roja.png);
   background-size: cover;
 }
 
 .container-balls {
-  max-width: 800px;
-  max-height: 650px;
+  position: relative;
+  width: 400px;
+  height: 80vh;
 }
 
 .ball {
   position: absolute;
-  width: 30px;
-  height: 30px; 
+  width: 35px;
+  height: 35px; 
   background-image: url(imagenes/bola.png);
   background-size: cover; 
   display: inline-block;
@@ -112,39 +129,39 @@ body {
 
 
 #ball1 {
-  left: 29%;
-  bottom: 19%;
+  left: 15%;
+  bottom: 8%;
 }
 #ball2 {
   left: 37%;
-  bottom: 17%;
+  bottom: 9%;
 }
 #ball3 {
   left: 50%;
-  bottom: 18%;
+  bottom: 8%;
 }
 #ball4 {
-  left: 62%;
-  bottom: 18%;
+  left: 72%;
+  bottom: 8%;
 }
 #ball5 {
-  left: 30%;
-  bottom: 26%;
+  left: 20%;
+  bottom: 22%;
 }
 #ball6 {
   left: 40%;
-  bottom: 28%;
+  bottom: 24%;
 }
 #ball7 {
   left: 52%;
-  bottom: 26%;
+  bottom: 24%;
 }
 #ball8 {
-  left: 62%;
-  bottom: 28%;
+  left: 72%;
+  bottom: 21%;
 }
 #ball9 {
-  left: 32%;
+  left: 28%;
   bottom: 36%;
 }
 #ball10 {
@@ -152,36 +169,36 @@ body {
   bottom: 37%;
 }
 #ball11 {
-  left: 55%;
-  bottom: 36%;
+  left: 65%;
+  bottom: 35%;
 }
 #ball12 {
-  left: 37%;
-  bottom: 46%;
+  left: 30%;
+  bottom: 48%;
 }
 #ball13 {
-  left: 47%;
-  bottom: 46%;
+  left: 46%;
+  bottom: 50%;
 }
 #ball14 {
-  left: 55%;
-  bottom: 47%;
+  left: 56%;
+  bottom: 50%;
 }
 #ball15 {
-  left: 40%;
-  bottom: 54%;
+  left: 38%;
+  bottom: 60%;
 }
 #ball16 {
-  left: 50%;
-  bottom: 56%;
+  left: 55%;
+  bottom: 60%;
 }
 #ball17 {
-  left: 45%;
-  bottom: 62%;
+  left: 42%;
+  bottom: 71%;
 }
 #ball18 {
-  left: 49%;
-  bottom: 71%;
+  left: 47%;
+  bottom: 78%;
 }
 
 .card {
@@ -259,12 +276,14 @@ body {
 }
 
 
-/* @media only screen and (max-width: 600px) {
-  .tree-container {
-    transform: scale(.7);
-  }
+@media only screen and (max-width: 400px) {
   
-  .tree {
-    transform: scale(0.8);
+  .tree-container .container-balls {
+    height: 80vh;
+    width: 100%;
   }
-} */
+  .tree-container .ball {
+    width: 25px;
+    height: 25px;
+  }
+}
